@@ -44,3 +44,10 @@ console.log(uppCaseTea);
 
   let Reverse = teas.reverse();
   console.log(Reverse);
+
+  // reverse by for loop
+  let reverseArray=[];
+  for (let i=teas.length-1;i>=0;i--){
+   reverseArray.push(teas[i]);
+  }
+  console.log(reverseArray);
