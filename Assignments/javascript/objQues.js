@@ -36,3 +36,9 @@ const myTeas ={
         name:"black tea"
     }
 }
+
+// copy of tea object
+const teaCopy ={
+    ...myTeas
+}
+console.log(teaCopy);
