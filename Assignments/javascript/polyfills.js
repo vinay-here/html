@@ -20,7 +20,24 @@ if (!Array.prototype.myMap){
         return result;
     };
 }
-const arr =[1,2,3,4,5]
+
+  
+
+if (!Array.prototype.myFilter){
+    Array.prototype.myFilter = function (userFun){
+        const result =[];
+
+         for(let i=0;i<this.length;i++){
+         if   (userFun(this[i])){
+              result.push(this[i]);
+         }
+        
+    }
+    return result;
+
+};
+   }
+const arr =[1,2,3,4,5,6]
 
 // Error: .forEach fun doesn't exist on arr variable
 
@@ -43,3 +60,10 @@ const n =arr.map(function(val,idx){
 
 const n2= arr.myMap((e)=>e*3);
 console.log(n2);
+
+//filter 
+// signature: return new array | input userFun
+// agar user ka function true return karta to current value in new Array
+
+const n3 =arr.myFilter((val)=>val % 2==0);
+console.log('Even nos are',n3);
