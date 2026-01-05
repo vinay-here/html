@@ -53,4 +53,3 @@ const counter = function (){
     console.log('vinay');
 })()
 
-()()
