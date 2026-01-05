@@ -9,3 +9,5 @@ Array.prototype.vinay =function(){
     console.log('My Name is Vinay');
 }
 Array.prototype // it work in console of browser
+
+
